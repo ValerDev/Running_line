@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.running-line {
+    width: 80%;
+}
+
+#newsTicker1.bn-breaking-news {
+    height: 40px;
+    line-height: 38px;
+    border-radius: 2px;
+    border-width: 1px;
+    display: block;
+    direction: ltr;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+#newsTicker1 * {
+    transition: .3s;
+}
+
+#newsTicker1 .bn-news {
+    left: 0 !important;
+    right: 90px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+#newsTicker1 .bn-news ul {
+    display: block;
+    position: relative;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#newsTicker1 .bn-news ul li {
+    display: list-item;
+    float: left;
+    position: relative;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    transition: color 2s linear;
+    color: #282726;
+}
+#newsTicker1 .bn-news ul li a{
+    color: #747474;
+    text-decoration: none;
+}
+#newsTicker1 .bn-news ul li a:hover{
+    color: #282726;
+}
+#newsTicker1 .bn-controls {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    user-select: none;
+}
+
+#newsTicker1 .bn-controls button {
+    width: 30px;
+    float: left;
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: none;
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+#newsTicker1 .bn-controls button:disabled {
+    background-color: red;
+}
+
+#newsTicker1 .bn-controls button:hover {
+    background-color: rgb(67, 32, 102);
+
+}
